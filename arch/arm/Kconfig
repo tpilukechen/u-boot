@@ -755,6 +755,7 @@ config TARGET_WITHERSPOON_BMC
 
 config TARGET_AST_G4
        bool "Support ast2400"
+       select CPU_ARM926EJS
 
 endchoice
 
@@ -893,9 +894,7 @@ source "board/vscom/baltos/Kconfig"
 source "board/woodburn/Kconfig"
 source "board/work-microwave/work_92105/Kconfig"
 source "board/zipitz2/Kconfig"
-source "board/aspeed/ast-g5/Kconfig"
-source "board/aspeed/ast-g4/Kconfig"
-source "board/aspeed/witherspoon-bmc/Kconfig"
+source "board/aspeed/Kconfig"
 
 source "arch/arm/Kconfig.debug"
 
