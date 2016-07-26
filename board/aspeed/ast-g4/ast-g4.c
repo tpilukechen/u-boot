@@ -61,6 +61,9 @@ int misc_init_r(void)
 	reg |= 0x61800000;
 	writel(reg, AST_SCU_BASE + AST_SCU_CLK_SEL);
 
+	//Init AST2400 GPIO pins
+	ast_scu_gpio_init();
+
 	return 0;
 }
 

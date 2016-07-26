@@ -12,4 +12,5 @@
 
 
 obj-y += timer.o reset.o cpuinfo.o ast-scu.o ast-ahbc.o ast-sdmc.o
+obj-y += ast-gpio.o
 obj-$(CONFIG_AST_SPI_NOR) += flash.o

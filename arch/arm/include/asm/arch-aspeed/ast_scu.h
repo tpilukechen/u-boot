@@ -45,4 +45,5 @@ extern void ast_scu_init_eth(u8 num);
 extern void ast_scu_multi_func_eth(u8 num);
 extern void ast_scu_multi_func_romcs(u8 num);
 
+extern void ast_scu_gpio_init(void);
 #endif
